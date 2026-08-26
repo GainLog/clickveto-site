@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gainlog.github.io/clickveto-site/sitemap.xml
