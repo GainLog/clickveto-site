@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ClickVeto Privacy Policy / Datenschutzerklärung">
+<meta name="theme-color" content="#06111f">
+<title>ClickVeto — Privacy Policy / Datenschutzerklärung</title>
+<style>
+:root{color-scheme:dark;--bg:#06111f;--panel:#0b1a2b;--panel2:#102238;--line:#24415e;--text:#f7fbff;--muted:#a6bdd4;--blue:#2f86ff;--green:#63dda0}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 82% -8%,#6354ff35,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.62}
+a{color:#8fc5ff}
+.wrap{width:min(940px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:#06111fe8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:900;text-decoration:none;color:#fff;font-size:20px}
+.controls{display:flex;gap:8px}
+button,.back{border:1px solid var(--line);background:#0b1929;color:#fff;border-radius:11px;padding:9px 13px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;text-decoration:none}
+button.active{border-color:#6c8df5;background:#16214b}
+main{padding:56px 0 70px}
+h1{font-size:clamp(38px,6vw,58px);line-height:1.02;letter-spacing:-.045em;margin:0 0 12px}
+h2{font-size:24px;margin:34px 0 10px}
+h3{font-size:17px;margin:22px 0 8px}
+p,li{color:#c5d6e5}
+.lead{font-size:17px;color:var(--muted);max-width:780px}
+.card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:18px;padding:22px;margin:18px 0}
+.good{border-color:#2e684d;background:#0b2419}
+.small{font-size:13px;color:#91a8bc}
+ul{padding-left:22px}
+code{background:#071522;border:1px solid var(--line);border-radius:6px;padding:2px 5px;color:#d6e9fb}
+.lang{display:none}
+.lang.show{display:block}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-size:12px}
+@media(max-width:620px){nav{align-items:flex-start;padding:12px 0;flex-direction:column}.controls{flex-wrap:wrap}main{padding-top:36px}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="./">ClickVeto</a>
+    <div class="controls">
+      <a class="back" href="./">← Website</a>
+      <button id="enBtn" class="active" type="button">EN</button>
+      <button id="deBtn" type="button">DE</button>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+<section id="en" class="lang show">
+  <h1>Privacy Policy</h1>
+  <p class="lead">ClickVeto is designed as a local-first browser protection extension. This policy explains what data ClickVeto processes, what remains on your device, and the limited cases in which data is sent to an external service.</p>
+  <p class="small"><strong>Last updated:</strong> 28 August 2026</p>
+
+  <div class="card good">
+    <strong>Short version</strong>
+    <p>Browsing protection decisions, settings and protection logs are processed locally in Chrome. ClickVeto does not sell browsing data and does not use it for advertising or profiling. Only Pro license activation and validation communicates with Lemon Squeezy's license service.</p>
+  </div>
+
+  <h2>1. Controller / contact</h2>
+  <p>ClickVeto is operated as the ClickVeto project by <strong>GainLog</strong>. Questions about privacy or the extension can be submitted through the ClickVeto support channel:</p>
+  <p><a href="https://github.com/GainLog/clickveto-site/issues" target="_blank" rel="noreferrer">ClickVeto Support on GitHub</a></p>
+
+  <h2>2. Single purpose of the extension</h2>
+  <p>ClickVeto's single purpose is to protect users from unwanted browser actions and intrusive web behavior, including unwanted popups and popunders, suspicious redirects and tab swaps, risky downloads, unwanted advertising/network requests, deceptive overlays and related browser side effects.</p>
+
+  <h2>3. Data processed locally</h2>
+  <p>To provide that protection, ClickVeto may process the following data locally in the browser:</p>
+  <ul>
+    <li><strong>Web history / navigation context:</strong> website URLs, hostnames, top-level navigation events, redirect chains and source/target relationships needed to decide whether an action is expected or suspicious.</li>
+    <li><strong>User activity:</strong> interaction context such as clicks, keyboard submit actions and the relationship between a user gesture and browser actions it triggers.</li>
+    <li><strong>Website content and page metadata:</strong> limited DOM information, links, form targets, iframe attributes, overlay/ad markers and similar page signals needed to identify intrusive elements or distinguish intended actions from unwanted ones.</li>
+    <li><strong>Protection configuration:</strong> settings, allowlists, blocklists, temporary exceptions, per-site rules, manually blocked elements, protection level and related preferences.</li>
+    <li><strong>Local protection history:</strong> protection events, counters, download decisions, website reputation/adaptive signals and diagnostic information exposed by ClickVeto.</li>
+  </ul>
+  <p>This information is used for browser protection and troubleshooting and is stored locally using Chrome extension storage unless otherwise stated below.</p>
+
+  <h2>4. Data sent to Lemon Squeezy for Pro licensing</h2>
+  <p>Core protection does not require a ClickVeto account or ClickVeto server. If you activate ClickVeto Pro with a license key, ClickVeto communicates directly over HTTPS with Lemon Squeezy's licensing API.</p>
+  <p>The extension may send:</p>
+  <ul>
+    <li>the license key entered by the user;</li>
+    <li>a locally generated installation identifier, used as part of the license instance name;</li>
+    <li>the Lemon Squeezy license instance identifier when validating or deactivating an existing activation.</li>
+  </ul>
+  <p>The licensing response may contain license, instance, customer and order identifiers. ClickVeto may keep license entitlement metadata locally so that Pro status can be displayed and periodically revalidated.</p>
+  <p><strong>Payment information:</strong> purchases are completed on Lemon Squeezy's checkout. ClickVeto does not receive or store credit-card numbers, bank details, PayPal credentials or other payment-instrument data.</p>
+
+  <h2>5. Data not sent to ClickVeto</h2>
+  <ul>
+    <li>ClickVeto does not upload your browsing history to a ClickVeto server.</li>
+    <li>ClickVeto does not transmit the contents of downloaded files to a ClickVeto server.</li>
+    <li>ClickVeto does not sell personal data or browsing data.</li>
+    <li>ClickVeto does not use browsing data for advertising, cross-site profiling, credit scoring or lending decisions.</li>
+  </ul>
+
+  <h2>6. Permissions and broad website access</h2>
+  <p>ClickVeto requests access to websites you visit because its protection must work across arbitrary sites. That access is used to inspect only the navigation, interaction and page signals required for the disclosed protection features. Broad host access does not mean that browsing data is sent to ClickVeto.</p>
+
+  <h2>7. Manually blocked elements</h2>
+  <p>If you use <strong>“ClickVeto: Block element”</strong> from the context menu, ClickVeto creates a local site-specific rule so the selected element can remain hidden on later visits. These rules remain in local extension storage until they are removed, reset or the extension is uninstalled.</p>
+
+  <h2>8. Backups</h2>
+  <p>If you create a ClickVeto backup, the backup is generated locally and downloaded as a file chosen by you. Pro license data, the local license installation identifier and temporary/session permissions are excluded from ClickVeto backups.</p>
+
+  <h2>9. Retention and deletion</h2>
+  <p>Local settings and logs remain in the browser until they are cleared through ClickVeto, Chrome extension storage is removed, or ClickVeto is uninstalled. License entitlement data remains locally until deactivation, reset or uninstall, subject to revalidation with the license provider.</p>
+  <p>Support messages submitted through GitHub are handled by GitHub and remain subject to GitHub's own retention and privacy practices.</p>
+
+  <h2>10. Website hosting</h2>
+  <p>The ClickVeto website is hosted using GitHub Pages. When you visit the website, GitHub may process technical request data such as IP address, browser information and server logs according to GitHub's own privacy policy. ClickVeto does not add its own analytics or advertising trackers to this privacy page.</p>
+
+  <h2>11. Security</h2>
+  <p>License communication uses HTTPS. ClickVeto limits external data transfer to the licensing functions described above and keeps protection processing local wherever possible. No software can guarantee absolute security.</p>
+
+  <h2>12. Chrome Web Store Limited Use</h2>
+  <div class="card good">
+    <p><strong>ClickVeto's use of user data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements.</strong></p>
+    <p>User data is used only to provide or improve ClickVeto's disclosed browser-protection and license-entitlement functionality. It is not sold, used for personalized advertising, used to determine creditworthiness, or transferred for purposes unrelated to ClickVeto's single purpose.</p>
+  </div>
+
+  <h2>13. Third-party services</h2>
+  <ul>
+    <li><strong>Lemon Squeezy:</strong> checkout and Pro license activation/validation.</li>
+    <li><strong>GitHub / GitHub Pages:</strong> website hosting and optional support through GitHub Issues.</li>
+    <li><strong>Google Chrome / Chrome Web Store:</strong> browser platform and extension distribution. Chrome itself may process browser/extension information under Google's own terms and privacy policy.</li>
+  </ul>
+
+  <h2>14. Your choices and rights</h2>
+  <p>You can disable ClickVeto, clear its local configuration, remove manually blocked elements, deactivate Pro, or uninstall the extension at any time. Depending on applicable law, you may also have rights relating to access, correction, deletion, restriction or objection regarding personal data processed by an external service. Requests concerning ClickVeto can be made through the support channel above; requests concerning Lemon Squeezy, GitHub or Google should also be directed to the relevant provider where appropriate.</p>
+
+  <h2>15. Changes to this policy</h2>
+  <p>This policy may be updated when ClickVeto's functionality, permissions or external service use changes. The “Last updated” date above identifies the current version.</p>
+</section>
+
+<section id="de" class="lang">
+  <h1>Datenschutzerklärung</h1>
+  <p class="lead">ClickVeto ist als lokal arbeitende Browser-Schutz-Erweiterung konzipiert. Diese Datenschutzerklärung beschreibt, welche Daten ClickVeto verarbeitet, was auf deinem Gerät bleibt und in welchen wenigen Fällen Daten an einen externen Dienst übertragen werden.</p>
+  <p class="small"><strong>Stand:</strong> 28. August 2026</p>
+
+  <div class="card good">
+    <strong>Kurzfassung</strong>
+    <p>Schutzentscheidungen, Einstellungen und Schutzprotokolle werden lokal in Chrome verarbeitet. ClickVeto verkauft keine Browserdaten und nutzt sie weder für Werbung noch für Profilbildung. Nur die Aktivierung und regelmäßige Prüfung einer Pro-Lizenz kommuniziert mit dem Lizenzdienst von Lemon Squeezy.</p>
+  </div>
+
+  <h2>1. Verantwortlicher / Kontakt</h2>
+  <p>ClickVeto wird als ClickVeto-Projekt von <strong>GainLog</strong> betrieben. Fragen zum Datenschutz oder zur Erweiterung können über den ClickVeto-Support gestellt werden:</p>
+  <p><a href="https://github.com/GainLog/clickveto-site/issues" target="_blank" rel="noreferrer">ClickVeto-Support auf GitHub</a></p>
+
+  <h2>2. Alleiniger Zweck der Erweiterung</h2>
+  <p>Der alleinige Zweck von ClickVeto ist der Schutz vor unerwünschten Browser-Aktionen und aufdringlichem Web-Verhalten, insbesondere unerwünschten Popups/Popundern, verdächtigen Redirects und Tab-Wechseln, riskanten Downloads, unerwünschten Werbe- und Netzwerkanfragen, täuschenden Overlays sowie damit verbundenen Browser-Nebenwirkungen.</p>
+
+  <h2>3. Lokal verarbeitete Daten</h2>
+  <p>Für diesen Schutz kann ClickVeto folgende Daten lokal im Browser verarbeiten:</p>
+  <ul>
+    <li><strong>Webprotokoll / Navigationskontext:</strong> Website-URLs, Hostnamen, Top-Level-Navigationen, Redirect-Ketten sowie Quell-/Zielbeziehungen, soweit dies für die Schutzentscheidung erforderlich ist.</li>
+    <li><strong>Nutzeraktivität:</strong> Interaktionskontext wie Klicks, Tastatur-Auslösungen von Formularen und die Beziehung zwischen einer Nutzeraktion und den dadurch ausgelösten Browser-Aktionen.</li>
+    <li><strong>Website-Inhalte und Seitenmetadaten:</strong> begrenzte DOM-Informationen, Links, Formularziele, iframe-Attribute, Werbe-/Overlay-Marker und vergleichbare Signale, die zur Erkennung störender Elemente oder zur Unterscheidung gewünschter und unerwünschter Aktionen nötig sind.</li>
+    <li><strong>Schutzkonfiguration:</strong> Einstellungen, Allow-/Blocklisten, temporäre Freigaben, Website-Regeln, manuell blockierte Elemente, Schutzstufe und weitere Präferenzen.</li>
+    <li><strong>Lokaler Schutzverlauf:</strong> Schutzereignisse, Zähler, Download-Entscheidungen, Website-Reputation/adaptive Signale sowie von ClickVeto bereitgestellte Diagnoseinformationen.</li>
+  </ul>
+  <p>Diese Daten werden für Browserschutz und Fehlerdiagnose genutzt und – soweit nachfolgend nichts anderes genannt ist – im lokalen Chrome-Erweiterungsspeicher verarbeitet.</p>
+
+  <h2>4. Datenübertragung an Lemon Squeezy für Pro-Lizenzen</h2>
+  <p>Für den Kernschutz sind weder ein ClickVeto-Konto noch ein ClickVeto-Server erforderlich. Wenn du ClickVeto Pro mit einem Lizenzschlüssel aktivierst, kommuniziert ClickVeto direkt per HTTPS mit der Lizenz-API von Lemon Squeezy.</p>
+  <p>Dabei kann die Erweiterung insbesondere übermitteln:</p>
+  <ul>
+    <li>den vom Nutzer eingegebenen Lizenzschlüssel;</li>
+    <li>eine lokal erzeugte Installationskennung, die als Bestandteil des Lizenz-Instanznamens verwendet wird;</li>
+    <li>die von Lemon Squeezy vergebene Instanz-ID bei späteren Validierungen oder einer Deaktivierung.</li>
+  </ul>
+  <p>Die Antwort des Lizenzdienstes kann Lizenz-, Instanz-, Kunden- und Bestellkennungen enthalten. ClickVeto kann Lizenz-/Berechtigungsmetadaten lokal speichern, damit der Pro-Status angezeigt und regelmäßig erneut geprüft werden kann.</p>
+  <p><strong>Zahlungsdaten:</strong> Der Kauf wird vollständig über den Checkout von Lemon Squeezy abgewickelt. ClickVeto erhält und speichert keine Kreditkartennummern, Bankdaten, PayPal-Zugangsdaten oder sonstige Zahlungsinstrumentdaten.</p>
+
+  <h2>5. Daten, die ClickVeto nicht überträgt</h2>
+  <ul>
+    <li>ClickVeto lädt deinen Browserverlauf nicht auf einen ClickVeto-Server hoch.</li>
+    <li>ClickVeto überträgt den Inhalt heruntergeladener Dateien nicht an einen ClickVeto-Server.</li>
+    <li>ClickVeto verkauft keine personenbezogenen Daten oder Browserdaten.</li>
+    <li>ClickVeto nutzt Browserdaten nicht für Werbung, Cross-Site-Profilbildung, Bonitätsprüfung oder Kreditentscheidungen.</li>
+  </ul>
+
+  <h2>6. Berechtigungen und Zugriff auf Websites</h2>
+  <p>ClickVeto benötigt Zugriff auf Websites, weil der Schutz auf beliebigen vom Nutzer besuchten Seiten funktionieren muss. Der Zugriff wird nur genutzt, um die für die beschriebenen Schutzfunktionen erforderlichen Navigations-, Interaktions- und Seitensignale auszuwerten. Eine breite Hostberechtigung bedeutet nicht, dass der Browserverlauf an ClickVeto übertragen wird.</p>
+
+  <h2>7. Manuell blockierte Elemente</h2>
+  <p>Wenn du über das Kontextmenü <strong>„ClickVeto: Element blockieren“</strong> verwendest, legt ClickVeto eine lokale, websitespezifische Regel an, damit das ausgewählte Element bei späteren Besuchen ausgeblendet bleibt. Diese Regeln bleiben im lokalen Erweiterungsspeicher, bis sie entfernt/zurückgesetzt werden oder ClickVeto deinstalliert wird.</p>
+
+  <h2>8. Backups</h2>
+  <p>Ein ClickVeto-Backup wird lokal erzeugt und als Datei auf deinem Gerät gespeichert. Pro-Lizenzdaten, die lokale Lizenz-Installationskennung und temporäre bzw. sitzungsbezogene Freigaben werden nicht in ClickVeto-Backups exportiert.</p>
+
+  <h2>9. Speicherdauer und Löschung</h2>
+  <p>Lokale Einstellungen und Protokolle bleiben im Browser, bis sie über ClickVeto gelöscht/zurückgesetzt werden, der Erweiterungsspeicher entfernt wird oder ClickVeto deinstalliert wird. Lizenz-/Berechtigungsdaten bleiben bis zur Deaktivierung, zum Zurücksetzen oder zur Deinstallation lokal gespeichert und können regelmäßig beim Lizenzanbieter validiert werden.</p>
+  <p>Support-Nachrichten, die über GitHub eingereicht werden, werden von GitHub verarbeitet und unterliegen den dortigen Speicher- und Datenschutzregeln.</p>
+
+  <h2>10. Hosting der Website</h2>
+  <p>Die ClickVeto-Website wird über GitHub Pages bereitgestellt. Beim Aufruf kann GitHub technische Verbindungsdaten wie IP-Adresse, Browserinformationen und Server-Logs nach der eigenen Datenschutzerklärung verarbeiten. ClickVeto bindet auf dieser Datenschutzseite keine eigenen Analyse- oder Werbetracker ein.</p>
+
+  <h2>11. Sicherheit</h2>
+  <p>Die Lizenzkommunikation erfolgt über HTTPS. ClickVeto beschränkt externe Datenübertragungen auf die oben beschriebenen Lizenzfunktionen und verarbeitet Schutzdaten soweit wie möglich lokal. Eine absolute Sicherheit kann technisch nicht garantiert werden.</p>
+
+  <h2>12. Chrome Web Store – Limited Use</h2>
+  <div class="card good">
+    <p><strong>Die Nutzung von Nutzerdaten durch ClickVeto entspricht der Chrome Web Store User Data Policy einschließlich der dortigen Limited-Use-Anforderungen.</strong></p>
+    <p>Nutzerdaten werden nur verwendet, um die offengelegten Browserschutz- und Lizenzberechtigungsfunktionen bereitzustellen bzw. zu verbessern. Sie werden nicht verkauft, nicht für personalisierte Werbung oder Bonitätsentscheidungen genutzt und nicht für Zwecke übertragen, die nichts mit dem alleinigen Zweck von ClickVeto zu tun haben.</p>
+  </div>
+
+  <h2>13. Eingesetzte Drittanbieter</h2>
+  <ul>
+    <li><strong>Lemon Squeezy:</strong> Checkout sowie Aktivierung/Validierung von Pro-Lizenzen.</li>
+    <li><strong>GitHub / GitHub Pages:</strong> Hosting der Website und optionaler Support über GitHub Issues.</li>
+    <li><strong>Google Chrome / Chrome Web Store:</strong> Browserplattform und Verteilung der Erweiterung. Chrome selbst kann Browser-/Erweiterungsinformationen nach den eigenen Bedingungen und Datenschutzregeln verarbeiten.</li>
+  </ul>
+
+  <h2>14. Wahlmöglichkeiten und Betroffenenrechte</h2>
+  <p>Du kannst ClickVeto jederzeit deaktivieren, die lokale Konfiguration löschen, manuell blockierte Elemente entfernen, Pro deaktivieren oder die Erweiterung deinstallieren. Je nach anwendbarem Recht können zusätzlich Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch bezüglich personenbezogener Daten bestehen. Anfragen zu ClickVeto können über den oben genannten Support-Kanal gestellt werden; Anfragen zu Lemon Squeezy, GitHub oder Google sollten – soweit einschlägig – zusätzlich direkt an den jeweiligen Anbieter gerichtet werden.</p>
+
+  <h2>15. Änderungen dieser Datenschutzerklärung</h2>
+  <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen, Berechtigungen oder die Nutzung externer Dienste von ClickVeto ändern. Maßgeblich ist das oben angegebene Aktualisierungsdatum.</p>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 ClickVeto · <a href="./">Website</a> · <a href="https://github.com/GainLog/clickveto-site/issues" target="_blank" rel="noreferrer">Support</a></div>
+</footer>
+
+<script>
+const en=document.getElementById('en'),de=document.getElementById('de'),enBtn=document.getElementById('enBtn'),deBtn=document.getElementById('deBtn');
+function setLang(lang){
+  const isDe=lang==='de';
+  en.classList.toggle('show',!isDe);de.classList.toggle('show',isDe);
+  enBtn.classList.toggle('active',!isDe);deBtn.classList.toggle('active',isDe);
+  document.documentElement.lang=isDe?'de':'en';
+  try{localStorage.setItem('clickveto-privacy-lang',lang)}catch{}
+}
+enBtn.onclick=()=>setLang('en');deBtn.onclick=()=>setLang('de');
+let saved='';try{saved=localStorage.getItem('clickveto-privacy-lang')||''}catch{}
+setLang(saved||((navigator.language||'').toLowerCase().startsWith('de')?'de':'en'));
+</script>
+</body>
+</html>
