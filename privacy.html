@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="ClickVeto Privacy Policy / Datenschutzerklärung">
@@ -34,15 +33,15 @@ code{background:#071522;border:1px solid var(--line);border-radius:6px;padding:2
 footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-size:12px}
 @media(max-width:620px){nav{align-items:flex-start;padding:12px 0;flex-direction:column}.controls{flex-wrap:wrap}main{padding-top:36px}}
 </style>
-</head>
+<style>h1,h2,h3,p,li,a,code{overflow-wrap:anywhere}h1{line-height:1.15}@media(max-width:620px){h1{font-size:clamp(30px,9vw,38px)}.card{padding:16px}}</style></head>
 <body>
 <header>
   <nav class="wrap">
     <a class="brand" href="./">ClickVeto</a>
     <div class="controls">
       <a class="back" href="./">← Website</a>
-      <button id="enBtn" class="active" type="button">EN</button>
-      <button id="deBtn" type="button">DE</button>
+      <button id="enBtn" class="active" type="button" aria-label="English" aria-pressed="true">EN</button>
+      <button id="deBtn" type="button" aria-label="Deutsch" aria-pressed="false">DE</button>
     </div>
   </nav>
 </header>
@@ -51,7 +50,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
 <section id="en" class="lang show">
   <h1>Privacy Policy</h1>
   <p class="lead">ClickVeto is designed as a local-first browser protection extension. This policy explains what data ClickVeto processes, what remains on your device, and the limited cases in which data is sent to an external service.</p>
-  <p class="small"><strong>Last updated:</strong> 27 September 2026</p>
+  <p class="small"><strong>Last updated:</strong> 1 October 2026</p>
 
   <div class="card good">
     <strong>Short version</strong>
@@ -76,7 +75,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
   </ul>
   <p>This information is used for browser protection and troubleshooting and is stored locally using Chrome extension storage unless otherwise stated below.</p>
 
-  <h2>4. Data sent to Polar for Pro licensing</h2>
+  <h2>3a. Optional local measurement</h2><p>Optional measurement counters are disabled by default. After you enable them, they count activity days, Pro hints, Pro-page views, purchase-button clicks, opened checkout tabs and license activations. They contain no URLs, website names, license keys or user identifiers and are not transmitted. Disabling measurement deletes counter data. They describe this browser only; opening checkout does not prove a purchase. Hint limits and snoozing work independently of measurement consent.</p><h2>4. Data sent to Polar for Pro licensing</h2>
   <p>Core protection does not require a ClickVeto account or ClickVeto server. If you activate, validate or deactivate ClickVeto Pro, ClickVeto communicates directly over HTTPS with Polar's licensing API.</p>
   <p>The extension may send:</p>
   <ul>
@@ -112,8 +111,8 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
   <h2>10. Website hosting</h2>
   <p>The ClickVeto website is hosted using GitHub Pages. When you visit the website, GitHub may process technical request data such as IP address, browser information and server logs according to GitHub's own privacy policy. ClickVeto does not add its own analytics or advertising trackers to this privacy page.</p>
 
-  <h2>11. Security</h2>
-  <p>License communication uses HTTPS. ClickVeto limits external data transfer to the licensing functions described above and keeps protection processing local wherever possible. No software can guarantee absolute security.</p>
+  <p>The website stores your language preference locally. The privacy page may store its own language preference. These settings are not transmitted as analytics events.</p><h2>11. Security</h2>
+  <p>Licensing and filter-list requests use HTTPS. Protection processing and optional measurement remain local as described above. No software can guarantee absolute security.</p>
 
   <h2>12. Chrome Web Store Limited Use</h2>
   <div class="card good">
@@ -128,7 +127,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
     <li><strong>Google Chrome / Chrome Web Store:</strong> browser platform and extension distribution. Chrome itself may process browser/extension information under Google's own terms and privacy policy.</li>
   </ul>
 
-  <h2>14. Your choices and rights</h2>
+  <h2>13a. Filter-list downloads</h2><p>ClickVeto may download protection filter lists over HTTPS from jsDelivr and GitHub. These requests do not send recorded browsing history or use sign-in credentials. Providers receive the ordinary technical connection data associated with serving a network request.</p><h2>14. Your choices and rights</h2>
   <p>You can disable ClickVeto, clear its local configuration, remove manually blocked elements, deactivate Pro, or uninstall the extension at any time. Depending on applicable law, you may also have rights relating to access, correction, deletion, restriction or objection regarding personal data processed by an external service. Requests concerning ClickVeto can be made through the support channel above; requests concerning Polar, GitHub or Google should also be directed to the relevant provider where appropriate.</p>
 
   <h2>15. Changes to this policy</h2>
@@ -138,7 +137,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
 <section id="de" class="lang">
   <h1>Datenschutzerklärung</h1>
   <p class="lead">ClickVeto ist als lokal arbeitende Browser-Schutz-Erweiterung konzipiert. Diese Datenschutzerklärung beschreibt, welche Daten ClickVeto verarbeitet, was auf deinem Gerät bleibt und in welchen wenigen Fällen Daten an einen externen Dienst übertragen werden.</p>
-  <p class="small"><strong>Stand:</strong> 27. September 2026</p>
+  <p class="small"><strong>Stand:</strong> 1. Oktober 2026</p>
 
   <div class="card good">
     <strong>Kurzfassung</strong>
@@ -163,7 +162,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
   </ul>
   <p>Diese Daten werden für Browserschutz und Fehlerdiagnose genutzt und – soweit nachfolgend nichts anderes genannt ist – im lokalen Chrome-Erweiterungsspeicher verarbeitet.</p>
 
-  <h2>4. Datenübertragung an Polar für Pro-Lizenzen</h2>
+  <h2>3a. Freiwillige lokale Messzähler</h2><p>Freiwillige Messzähler sind standardmäßig ausgeschaltet. Nach deiner Aktivierung zählen sie Nutzungstage, Pro-Hinweise, Aufrufe der Pro-Seite, Kaufbutton-Klicks, geöffnete Checkout-Tabs und Lizenzaktivierungen. Sie enthalten keine URLs, Website-Namen, Lizenzschlüssel oder Nutzerkennungen und werden nicht übertragen. Deaktivieren löscht die Zählerdaten. Sie beschreiben nur diesen Browser; ein geöffneter Checkout belegt keinen Kauf. Hinweisbegrenzung und Ausblenden funktionieren unabhängig von der Messung.</p><h2>4. Datenübertragung an Polar für Pro-Lizenzen</h2>
   <p>Für den Kernschutz sind weder ein ClickVeto-Konto noch ein ClickVeto-Server erforderlich. Wenn du ClickVeto Pro aktivierst, prüfst oder deaktivierst, kommuniziert ClickVeto direkt per HTTPS mit der Lizenz-API von Polar.</p>
   <p>Dabei kann die Erweiterung insbesondere übermitteln:</p>
   <ul>
@@ -199,8 +198,8 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
   <h2>10. Hosting der Website</h2>
   <p>Die ClickVeto-Website wird über GitHub Pages bereitgestellt. Beim Aufruf kann GitHub technische Verbindungsdaten wie IP-Adresse, Browserinformationen und Server-Logs nach der eigenen Datenschutzerklärung verarbeiten. ClickVeto bindet auf dieser Datenschutzseite keine eigenen Analyse- oder Werbetracker ein.</p>
 
-  <h2>11. Sicherheit</h2>
-  <p>Die Lizenzkommunikation erfolgt über HTTPS. ClickVeto beschränkt externe Datenübertragungen auf die oben beschriebenen Lizenzfunktionen und verarbeitet Schutzdaten soweit wie möglich lokal. Eine absolute Sicherheit kann technisch nicht garantiert werden.</p>
+  <p>Die Website speichert deine Sprachwahl lokal. Die Datenschutzerklärungsseite kann ihre eigene Sprachwahl speichern. Diese Einstellungen werden nicht als Analyseereignisse übertragen.</p><h2>11. Sicherheit</h2>
+  <p>Lizenzkommunikation und Filterlisten-Abrufe erfolgen per HTTPS. Schutzverarbeitung und freiwillige Messung bleiben wie oben beschrieben lokal. Keine Software kann absolute Sicherheit garantieren.</p>
 
   <h2>12. Chrome Web Store – Limited Use</h2>
   <div class="card good">
@@ -215,7 +214,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
     <li><strong>Google Chrome / Chrome Web Store:</strong> Browserplattform und Verteilung der Erweiterung. Chrome selbst kann Browser-/Erweiterungsinformationen nach den eigenen Bedingungen und Datenschutzregeln verarbeiten.</li>
   </ul>
 
-  <h2>14. Wahlmöglichkeiten und Betroffenenrechte</h2>
+  <h2>13a. Abruf von Filterlisten</h2><p>ClickVeto kann Schutzfilterlisten per HTTPS von jsDelivr und GitHub abrufen. Diese Anfragen senden keine aufgezeichnete Browserhistorie und verwenden keine Anmeldedaten. Die Anbieter erhalten die bei Netzabrufen üblichen technischen Verbindungsdaten.</p><h2>14. Wahlmöglichkeiten und Betroffenenrechte</h2>
   <p>Du kannst ClickVeto jederzeit deaktivieren, die lokale Konfiguration löschen, manuell blockierte Elemente entfernen, Pro deaktivieren oder die Erweiterung deinstallieren. Je nach anwendbarem Recht können zusätzlich Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch bezüglich personenbezogener Daten bestehen. Anfragen zu ClickVeto können über den oben genannten Support-Kanal gestellt werden; Anfragen zu Polar, GitHub oder Google sollten – soweit einschlägig – zusätzlich direkt an den jeweiligen Anbieter gerichtet werden.</p>
 
   <h2>15. Änderungen dieser Datenschutzerklärung</h2>
@@ -232,7 +231,7 @@ const en=document.getElementById('en'),de=document.getElementById('de'),enBtn=do
 function setLang(lang){
   const isDe=lang==='de';
   en.classList.toggle('show',!isDe);de.classList.toggle('show',isDe);
-  enBtn.classList.toggle('active',!isDe);deBtn.classList.toggle('active',isDe);
+  enBtn.classList.toggle('active',!isDe);deBtn.classList.toggle('active',isDe);enBtn.setAttribute('aria-pressed',String(!isDe));deBtn.setAttribute('aria-pressed',String(isDe));
   document.documentElement.lang=isDe?'de':'en';
   try{localStorage.setItem('clickveto-privacy-lang',lang)}catch{}
 }
@@ -240,5 +239,6 @@ enBtn.onclick=()=>setLang('en');deBtn.onclick=()=>setLang('de');
 let saved='';try{saved=localStorage.getItem('clickveto-privacy-lang')||''}catch{}
 setLang(saved||((navigator.language||'').toLowerCase().startsWith('de')?'de':'en'));
 </script>
-</body>
-</html>
+
+
+</body></html>
