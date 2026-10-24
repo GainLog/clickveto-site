@@ -1,7 +1,7 @@
 (()=>{
  'use strict';
  const {shared,meta}=JSON.parse(document.getElementById('siteLanguageData').textContent),codes=['en','de','zh','es','ru'],htmlCodes={en:'en',de:'de',zh:'zh-CN',es:'es',ru:'ru'};
- const sections={features:{en:'features',de:'funktionen',zh:'features-zh',es:'features-es',ru:'features-ru'},pro:{en:'pro',de:'pro-de',zh:'pro-zh',es:'pro-es',ru:'pro-ru'},privacy:{en:'privacy',de:'datenschutz',zh:'privacy-zh',es:'privacy-es',ru:'privacy-ru'},support:{en:'support',de:'hilfe',zh:'support-zh',es:'support-es',ru:'support-ru'}};
+ const sections={captcha:{en:'captcha',de:'captcha-de',zh:'captcha-zh',es:'captcha-es',ru:'captcha-ru'},features:{en:'features',de:'funktionen',zh:'features-zh',es:'features-es',ru:'features-ru'},pro:{en:'pro',de:'pro-de',zh:'pro-zh',es:'pro-es',ru:'pro-ru'},privacy:{en:'privacy',de:'datenschutz',zh:'privacy-zh',es:'privacy-es',ru:'privacy-ru'},support:{en:'support',de:'hilfe',zh:'support-zh',es:'support-es',ru:'support-ru'}};
  function detect(value){const code=String(value||'').toLowerCase();if(code.startsWith('zh')&&!/tw|hk|hant/.test(code))return'zh';for(const lang of ['en','de','es','ru'])if(code===lang||code.startsWith(lang+'-'))return lang;return null;}
  function setLang(lang,updateUrl=false){
   if(!codes.includes(lang))lang='en';for(const code of codes)document.getElementById(code).classList.toggle('hidden',code!==lang);
