@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="de"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="ClickVeto Privacy Policy / Datenschutzerklärung">
@@ -40,17 +40,17 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
     <a class="brand" href="./">ClickVeto</a>
     <div class="controls">
       <a class="back" href="./">← Website</a>
-      <button id="enBtn" class="active" type="button" aria-label="English" aria-pressed="true">EN</button>
-      <button id="deBtn" type="button" aria-label="Deutsch" aria-pressed="false">DE</button>
+      <button id="enBtn" class="" type="button" aria-label="English" aria-pressed="false">EN</button>
+      <button id="deBtn" type="button" aria-label="Deutsch" aria-pressed="true" class="active">DE</button>
     </div>
   </nav>
 </header>
 
 <main class="wrap">
-<section id="en" class="lang show">
+<section id="en" class="lang">
   <h1>Privacy Policy</h1>
   <p class="lead">ClickVeto is designed as a local-first browser protection extension. This policy explains what data ClickVeto processes, what remains on your device, and the limited cases in which data is sent to an external service.</p>
-  <p class="small"><strong>Last updated:</strong> 24 October 2026</p>
+  <p class="small"><strong>Last updated:</strong> 30 October 2026</p>
 
   <div class="card good">
     <strong>Short version</strong>
@@ -132,12 +132,12 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
 
   <h2>15. Changes to this policy</h2>
   <p>This policy may be updated when ClickVeto's functionality, permissions or external service use changes. The “Last updated” date above identifies the current version.</p>
-</section>
+<section id="pro-value-privacy-en"><h2>Local page check and example demo</h2><p>When you explicitly choose Check this page in ClickVeto, the existing local comfort detector reads supported distraction patterns on the main page and returns category counts to the extension popup. It does not hide elements, click controls, store those counts or transmit them. The interactive example demo modifies only its fictional article; it neither scans websites nor changes cookie consent. Presets change the selected settings only until you explicitly apply a Pro website profile. No new analytics or external service is added.</p></section><section id="video-shield-privacy-en"><h2>YouTube and Twitch video-ad protection (Pro, optional)</h2><p>The optional YouTube shield processes already loaded player responses locally in memory and removes known ad entries. It may activate visible ad-skip controls. This module stores only its setting and aggregate local activity counters, not video titles, video IDs, URLs, listening history or account details. It sends no content to ClickVeto or an additional helper service. Normal YouTube/Google requests remain. The previously described optional Twitch shield and its Twitch requests remain unchanged; both features require Pro and explicit activation.</p></section></section>
 
-<section id="de" class="lang">
+<section id="de" class="lang show">
   <h1>Datenschutzerklärung</h1>
   <p class="lead">ClickVeto ist als lokal arbeitende Browser-Schutz-Erweiterung konzipiert. Diese Datenschutzerklärung beschreibt, welche Daten ClickVeto verarbeitet, was auf deinem Gerät bleibt und in welchen wenigen Fällen Daten an einen externen Dienst übertragen werden.</p>
-  <p class="small"><strong>Stand:</strong> 24. Oktober 2026</p>
+  <p class="small"><strong>Stand:</strong> 30. Oktober 2026</p>
 
   <div class="card good">
     <strong>Kurzfassung</strong>
@@ -219,7 +219,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#8ea5bb;font-s
 
   <h2>15. Änderungen dieser Datenschutzerklärung</h2>
   <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen, Berechtigungen oder die Nutzung externer Dienste von ClickVeto ändern. Maßgeblich ist das oben angegebene Aktualisierungsdatum.</p>
-</section>
+<section id="pro-value-privacy-de"><h2>Lokaler Seiten-Check und Beispieldemo</h2><p>Wenn du in ClickVeto ausdrücklich Diese Seite prüfen wählst, liest die vorhandene lokale Komfort-Erkennung unterstützte Störmuster auf der Hauptseite und gibt Kategorieanzahlen an das Erweiterungs-Popup zurück. Dabei werden keine Elemente ausgeblendet, keine Buttons angeklickt und keine Ergebnisse gespeichert oder übertragen. Die interaktive Beispieldemo verändert nur ihren fiktiven Artikel; sie scannt keine Websites und verändert keine Cookie-Einwilligung. Vorlagen ändern nur die Auswahl, bis du ein Pro-Website-Profil ausdrücklich anwendest. Keine zusätzliche Analyseübertragung und kein externer Dienst.</p></section><section id="video-shield-privacy-de"><h2>YouTube- und Twitch-Videowerbeschutz (Pro, optional)</h2><p>Der optionale YouTube-Schutz verarbeitet bereits geladene Playerantworten lokal im Arbeitsspeicher und entfernt bekannte Werbeeinträge. Er kann sichtbare Werbe-Überspringen-Buttons betätigen. Gespeichert werden nur die Einstellung und aggregierte lokale Aktivitätszähler, keine Videotitel, Video-IDs, URLs, Hörverläufe oder Kontodaten durch dieses Modul. Keine Inhaltsübertragung an ClickVeto oder einen zusätzlichen Hilfsdienst. Normale Anfragen an YouTube/Google bleiben bestehen. Der zuvor beschriebene optionale Twitch-Schutz und seine Twitch-Anfragen bleiben unverändert; beide Funktionen benötigen Pro und ausdrückliche Aktivierung.</p></section></section>
 </main>
 
 <footer>
@@ -240,6 +240,7 @@ enBtn.onclick=()=>setLang('en');deBtn.onclick=()=>setLang('de');
 let saved='';try{saved=localStorage.getItem('clickveto-privacy-lang')||''}catch{}
 const requested=new URL(location.href).searchParams.get('lang');setLang((requested==='de'||requested==='en')?requested:(saved||((navigator.language||'').toLowerCase().startsWith('de')?'de':'en')));
 </script>
+
 
 
 
